@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Index</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+      <div id='container'>
+        <div class='info_block'>
+          <h4>Random Word (attempt #{{request.session.count}})</h4>
+          <p>Excellent in the use of naming alien and/or fantasy characters</p>
+          <h2>{{word}}</h2>
+          <a href="random_word/new">Keep it going</a>
+          <br>
+          <a href="random_word/clear">Clear the count</a>
+        </div>
+      </div>
+    </body>
+  </html>
